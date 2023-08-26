@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VeevHub/Booking</title>
+    <link rel="icon" href="images/3.png" type="image" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-2 fixed-top">
+  <div class="container">
+  <img src="images/3.png" width="100px" height="100px" alt="logo"/> <h2 style="color: #fff; margin-left:10px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; ">VeevHub</h2>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#About">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#Services">Services</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="booking.html">Booking</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#Contact">Contact</a>
+        </li>
+    </div>
+  </div>
+</nav>
+
+<!-- Booking page -->
+
+<section id="about" class="about-secction-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section header text-center mt-5 pb-5">
+                    <!-- <h2>Booking</h2> -->
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-12 mx-auto">
+                <form action="https://formspree.io/f/mbjvlley" method="POST">
+                    <div class="col-12 pt-5">
+                        <h1 class="appointment">Book Appointment</h1>
+                    </div>
+                    <div class="form-group col-12">
+                        <input type="text" name="name" class="form-control" placeholder="Full Name">
+                    </div>
+                    <div class="form-group col-12">
+                        <input type="email" name="email" class="form-control" placeholder="Email address">
+                    </div>
+                    <div class="form-group col-12">
+                        <input type="date" name="date" class="form-control" placeholder="DD/MM/YYYY">
+                    </div>
+                    <div class="form-group col-12">
+                        <input type="time" name="time" class="form-control" placeholder="Time">
+                    </div>
+                    <div class="form-group col-12">
+                        <textarea name="message" class="form-control" id="#" cols="30" rows="10" placeholder="Message"></textarea>
+                    </div>
+                    <div class="form-group col-12">
+                        <button type="submit" class="btn-3">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script>
+            const navEl = document.querySelector('.navbar');
+
+            window.addEventListener('scroll', () => {
+                if (window.scrollY >= 56) {
+                    navEl.classList.add('navbar-scrolled');
+                } else if (window.scrollY < 56) {
+                    navEl.classList.remove('navbar-scrolled');
+                }
+            });
+        </script>
+</body>
+</html>
